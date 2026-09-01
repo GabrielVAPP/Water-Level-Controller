@@ -2,8 +2,6 @@
 
 Embedded control system on a PIC16F886 that runs a water pump from three level sensors, with a dry-run alarm and a pump run-time cutoff. Simulated in Proteus, then built on perfboard and tested driving a real aquarium pump.
 
-Show Image
-
 What it does
 
 Three sensors watch a reservoir, and the firmware drives two outputs — the pump and an alarm:
