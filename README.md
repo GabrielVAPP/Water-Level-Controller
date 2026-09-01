@@ -76,7 +76,7 @@ does not. To work, the function has to re-read the port itself rather than a cap
 `bombaTimer += 50` assumes each loop iteration takes 50 ms. Each iteration calls `debounce()`
 three times at 20 ms each, so the real floor is 60 ms before any execution time is counted. The
 5000 threshold therefore fires at roughly 6 seconds rather than 5. A hardware timer, or
-elapsed-time arithmetic, is the correct approach — counting loop iterations and multiplying by
+millis()-style elapsed-time arithmetic, is the correct approach — counting loop iterations and multiplying by
 an assumed constant is wrong by construction.
 
 **A stale comment.** The comment above the timeout says 10 seconds while the constant says
